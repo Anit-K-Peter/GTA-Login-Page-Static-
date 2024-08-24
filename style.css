@@ -1,0 +1,166 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-stretch: normal;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    backdrop-filter: blur(4px);
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    box-shadow: 0 0 10px white;
+}
+
+.container .wrapper{
+    width: 100%;
+    color: white;
+}
+
+.wrapper h1{
+    text-align: center;
+    font-size: 3rem;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.wrapper .inputs{
+    width: 80%;
+    height: 5vh;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid rgb(36, 36, 36);
+    margin: 8% 10%;
+    justify-content: space-between;
+}
+
+.inputs input{
+    width: 90%;
+    padding-left: 10px;
+    color: rgb(75, 75, 75);
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+::placeholder{
+    color: rgb(48, 48, 48);
+}
+
+.inputs label{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.wrapper .remfor{
+    display: flex;
+    width: 80%;
+    margin: 0 10%;
+    justify-content: space-between;
+}
+
+.remfor .forget a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+.forget,
+.remfor label {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.remfor .forget a:hover{
+    color: red;
+}
+
+.wrapper button{
+    width: 80%;
+    height: 6vh;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #194388;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 7% 10%;
+    transition: 0.2s linear;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.wrapper button:hover{
+    scale: 1.1;
+}
+
+.wrapper p{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.wrapper p span{
+    font-size: 1.2rem;
+}
+
+.wrapper .social-links{
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-links div i{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: 0.2s linear;    
+
+}
+
+.social-links .google i{
+    background-color: red;
+    box-shadow: 0 0 50px red;
+    color: white;
+}
+
+.social-links .google i:hover{
+    background-color: transparent;
+    box-shadow: 0 0 20px red;
+    color: red;
+}
+
+.social-links .discord i{
+    background-color: rgb(4, 0, 255);
+    box-shadow: 0 0 50px black;
+    color: white;
+}
+
+.social-links .discord i:hover{
+    background-color: transparent;
+    box-sizing: 0 0 20px black;
+    color: #2d08ff;
+}
